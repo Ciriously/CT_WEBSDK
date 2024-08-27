@@ -1,0 +1,15 @@
+{
+  "name": "forms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "clevertap_sw.js",
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./public/styles.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  }
+}

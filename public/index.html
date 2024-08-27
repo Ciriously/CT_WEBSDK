@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aditya_Mishra_CT_WebSDk</title>
+  <link rel="icon" href="./assets/favico.ico" />
+
+  <!-- Importing Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Importing Tailwind CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Custom Styles -->
+  <style>
+
+  </style>
+</head>
+<body class="bg-gray-200 flex flex-col h-screen">
+
+  <!-- Header Section -->
+  <div class="bg-black text-white p-10 flex flex-col justify-between items-center relative flex-none">
+    <!-- Logo and Title -->
+    <div class="flex flex-col items-center mb-8">
+      <img src="./assets/lock.gif" alt="Logo" class="mb-2 w-24 h-auto" />
+      <p class="text-xl font-bold font-mono text-center">
+        Clevertap_WebSdk_Test by Aditya
+      </p>
+    </div>
+    <!-- Main Text and Sub Text -->
+    <div class="text-center mb-4">
+      <p id="mainText" class="text-6xl font-Inter font-bold"></p>
+      <p id="subText" class="text-xl font-Inter font-light text-white mt-4"></p>
+    </div>
+   
+  </div>
+  <!-- Banner  -->
+  <div id="container" class="bg-gradient-to-r from-blue-700 to-[#B06AB3] font-sans px-6 py-12">
+    <div class="container mx-auto flex flex-col justify-center items-center text-center">
+      <h2 class="text-white sm:text-4xl text-3xl font-bold mb-4">Discover Our New Collection</h2>
+      <p class="text-white text-base text-center mb-8">Elevate your style with our latest arrivals. Shop now and enjoy exclusive discounts!</p>
+  
+      <button id="getStartedButton" type="button" class="bg-white text-sm text-blue-600 font-semibold py-3 px-6 rounded-lg hover:bg-slate-100">
+        Get Started
+      </button>
+    </div>
+  </div>
+   
+  <!-- Banner  -->
+
+  <!-- Signup Form Section -->
+  <div class="flex-grow p-8 flex flex-col font-Inter justify-center items-center bg-gradient-to-r from-blue-500 to-white text-black relative">
+    <form id="signupForm" class="bg-white shadow-md font-Inter rounded px-8 pt-6 pb-8 mb-4 w-full max-w-lg">
+      <h1 class="block text-gray-700 text-xl font-bold font-poppins mb-4 text-center">
+        Sign Up
+      </h1>
+      <!-- Name Input -->
+      <div class="mb-4">
+        <label class="block font-poppins text-gray-700 text-sm font-bold mb-2" for="name">
+          Name:
+        </label>
+        <input
+          class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          type="text"
+          id="name"
+          name="name"
+          required
+        />
+      </div>
+      <!-- Email Input -->
+      <div class="mb-4">
+        <label class="block font-poppins text-gray-700 text-sm font-bold mb-2" for="email">
+          Email Address:
+        </label>
+        <input
+          class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          type="email"
+          id="email"
+          name="email"
+          required
+        />
+      </div>
+      <!-- Phone Input -->
+      <div class="mb-4">
+        <label class="block font-poppins text-gray-700 text-sm font-bold mb-2" for="phone">
+          Phone Number:
+        </label>
+        <input
+          class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          type="tel"
+          id="phone"
+          name="phone"
+        />
+      </div>
+      <!-- Date of Birth Input -->
+      <div class="mb-4">
+        <label class="block font-poppins text-gray-700 text-sm font-bold mb-2" for="dob">
+          Date of Birth:
+        </label>
+        <input
+          class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          type="date"
+          id="dob"
+          name="dob"
+          required
+        />
+      </div>
+      <!-- ID Input -->
+<div class="mb-4">
+  <label class="block font-poppins text-gray-700 text-sm font-bold mb-2" for="ID">
+    ID:
+  </label>
+  <input
+    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+    type="text"
+    id="ID"
+    name="ID"
+  />
+</div>
+
+      <!-- Action Buttons -->
+      <div class="flex flex-col md:flex-col font-poppins md:justify-between space-y-4">
+        <input
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline my-1 md:my-0 transform transition duration-500 ease-in-out hover:scale-105"
+          type="submit"
+          value="Login"
+        />
+        <button
+          id="askForPush"
+          class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline my-1 md:my-0 transform transition duration-500 ease-in-out hover:scale-105"
+        >
+          Ask For Push
+        </button>
+        <button
+          id="profilePush"
+          class="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline my-1 md:my-0 transform transition duration-500 ease-in-out hover:scale-105"
+        >
+          Profile Push
+        </button>
+        <button
+          id="eventButton"
+          class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline my-1 md:my-0 transform transition duration-500 ease-in-out hover:scale-105"
+        >
+          Raise Event
+        </button>
+      </div>
+    </form>
+     <!-- Footer -->
+     <footer class="text-center font-Inter text-sm">
+      &copy; 2024 Aditya Mishra. All rights reserved.
+    </footer>
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+
+    
+    // Register Service Worker
+
+  
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", function () {
+        navigator.serviceWorker.register("clevertap_sw.js").then(
+          function (registration) {
+            // Registration was successful
+            console.log("ServiceWorker registration successful with scope: ", registration.scope);
+          },
+          function (err) {
+            // Registration failed
+            console.log("ServiceWorker registration failed: ", err);
+          }
+        );
+      });
+    }
+
+    // Event Listeners for Buttons
+    document.getElementById('askForPush').addEventListener('click', function () {
+      clevertap.notification.push({
+        "titleText": 'Would you like to receive Push Notifications?',
+        "bodyText": 'We promise to only send you relevant content and give you updates on your transactions',
+        "okButtonText": 'Sign me up!',
+        "rejectButtonText": 'No thanks',
+        "okButtonColor": '#f28046'
+      });
+    });
+
+    document.getElementById('profilePush').addEventListener('click', function () {
+  clevertap.profile.push({
+    "Name": document.getElementById('name').value,
+    "Email": document.getElementById('email').value,
+    "Phone": document.getElementById('phone').value,
+    "DOB": document.getElementById('dob').value,
+    "ID": document.getElementById('ID').value  
+  });
+});
+
+    document.getElementById('eventButton').addEventListener('click', function () {
+      clevertap.event.push("Plan Chosen", {
+        "Plan Name": "Sample Plan",
+        "Price": "100",
+        "Forms": "Sample Form",
+        "Reports": "Sample Report"
+      });
+    });
+  </script>
+
+  <!-- External JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
