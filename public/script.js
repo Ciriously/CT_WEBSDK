@@ -10,7 +10,7 @@ var clevertap = {
 
 // Push account ID to CleverTap account array
 
-clevertap.account.push({ id: "TEST-464-8KW-ZR7Z" });
+clevertap.account.push({ id: "YOUR ACCOUNT ID HERE" });
 
 // Set privacy options for CleverTap
 
